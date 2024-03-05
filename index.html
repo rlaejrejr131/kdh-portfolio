@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEB SITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header_inner">
+                <!-- logo -->
+                <h1 class="header_logo" id="header-logo">
+                    <a href="#">
+                        LOGO
+                    </a>
+                </h1>
+                
+                <!-- navigation -->
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#" data-sec-id="visual-main" class="nav_btn active">home<span></span></a></li>
+                        <li><a href="#" data-sec-id="about-sec" class="nav_btn">about</a></li>
+                        <li><a href="#" data-sec-id="project-sec" class="nav_btn">project</a></li>
+                        <li><a href="#" data-sec-id="study-sec" class="nav_btn">study</a></li>
+                        <li><a href="#" data-sec-id="contact-sec" class="nav_btn">contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- mobile menu button -->
+                <div class="mobile_menu_btn">
+                    <span class="menu_bar"></span>
+                    <span class="menu_bar"></span>
+                </div>
+
+                <!-- theme toggle -->
+                <!-- <div class="theme_toggle">
+                    <span></span>
+                </div> -->
+            </div>
+        </header>
+        
+        <main>
+            <!-- main -->
+            <section id="visual-main" class="idx_section show_section">
+                <div class="line_box">
+                    <div></div>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="visual_txt_box">
+                    <span class="visual_bg_txt">PORTFOLIO</span>
+                    <em class="visual_my_name">kimdeokhyeon</em>
+                </div>
+            </section>
+
+            <!-- about -->
+            <section id="about-sec" class="idx_section">
+                <article class="profile_box">
+                    <h3 class="section_tit">ABOUT ME</h3>
+                    <div class="inner_wrap">
+                        <div class="profile_me">
+                            <div class="poto_box">
+                                <img src="./img/yj.jpg" alt="프로필 임시 이미지 입니다.">
+                            </div>
+                            <ul class="hashtags">
+                                <li>test</li>
+                                <li>test</li>
+                                <li>test</li>
+                                <li>test</li>
+                                <li>ESFJ</li>
+                            </ul>
+                        </div>
+                        <div class="profile_self">
+                            <div class="intro_box">
+                                <p>안녕하세요! 저는 2년 차 웹 퍼블리셔 김덕현 입니다.</p>
+                                <p>HTML, CSS, Javascript, Jquery로 다양한 작업을 하는것에 즐거움을 느끼며 웹 퍼블리셔로 일하고 있습니다.
+                                    Javascript, Jquery를 공부중에 막히는 부분을 해결했을때 뿌듯함을 느끼며 성장하고 있습니다.
+                                    
+                                </p>
+                                <p><em>오늘보다 내일 성장</em>한 웹 퍼블리셔가 되겠습니다.</p>
+                            </div>
+                            <dl class="profile_info">
+                                <dt>Name</dt>
+                                <dd>김덕현</dd>
+                                <dt>Birth</dt>
+                                <dd>1995.4</dd>
+                                <dt>Address</dt>
+                                <dd>서울시 동작구</dd>
+                                <dt>E-Mail</dt>
+                                <dd>rlaejrejr131@naver.com</dd>
+                            </dl>
+                            <dl class="skills">
+                                <dt>SKILLS</dt>
+                                <dd class="sk_html"><span>HTML</span></dd>
+                                <dd class="sk_css"><span>CSS</span></dd>
+                                <dd class="sk_js"><span>Javascript</span></dd>
+                                <dd class="sk_jq"><span>Jquery</span></dd>
+                                <dd class="sk_ps"><span>Potoshop</span></dd>
+                                <dd class="sk_ia"><span>Illustrator</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+                <article class="history_box">
+                    <h3 class="section_tit">HISTORY</h3>
+                    <ul class="timeline">
+                        <li><em>"ㅂㄹ웹"</em><span>2021.06 ~ 2023.06</span></li>
+                        <li><em>"ㅁㄴ얼라이언스"</em><span>2020.08 ~ 2020.12</span></li>
+                        <li><em>학원 수료</em><span>2020.03 ~ 2020.07</span></li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- project -->
+            <section id="project-sec" class="idx_section">
+                <h3 class="section_tit">PROJECT</h3>
+                <ul class="pj_list">
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail06.jpg" alt="쇼핑몰 라미 썸네일 이미지">
+                        <dl>
+                            <dt>라미[RAMI]</dt>
+                            <dd class="pj_cate">
+                                <span>#PC</span>
+                                <span>#MOBILE</span>
+                                <span>#쇼핑몰</span>
+                                <span>#영카트</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 90%</span>
+                            </dd>
+                        </dl>
+                        <ul class="pj_explain">
+                            <li>모바일과 PC를 별로도 제작</li>
+                            <li>영카트 사용한 쇼핑몰</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="http://ramie.barunweb.co.kr/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail05.jpg" alt="한양화로 홈페이지 썸네일 이미지">
+                        <dl>
+                            <dt>한양화로</dt>
+                            <dd class="pj_cate">
+                                <span>#PC</span>
+                                <span>#MOBILE</span>
+                                <span>#그누보드</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 90%</span>
+                            </dd>
+                        </dl>
+                        <ul class="pj_explain">
+                            <li>다양한 애니메이션 효과</li>
+                            <li>스크롤 이동 메뉴</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="http://banabafnb2.barunweb.co.kr/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail04.jpg" alt="서울뮤직프로덕션 홈페이지 썸네일 이미지">
+                        <dl>
+                            <dt>서울뮤직프로덕션</dt>
+                            <dd class="pj_cate">
+                                <span>#PC</span>
+                                <span>#MOBILE</span>
+                                <span>#그누보드</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 90%</span>
+                            </dd>
+                        </dl>
+                        <ul class="pj_explain">
+                            <li>메뉴 슬라이드</li>
+                            <li>fade in 효과</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="http://www.smpsound.co.kr/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail03.jpg" alt="에이제트솔루션 홈페이지 썸네일 이미지">
+                        <dl>
+                            <dt>AZ SOLUTION</dt>
+                            <dd class="pj_cate">
+                                <span>#PC</span>
+                                <span>#MOBILE</span>
+                                <span>#그누보드</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 90%</span>
+                            </dd>
+                        </dl>
+                        <!-- <ul class="pj_explain">
+                            <li></li>
+                        </ul> -->
+                        <div class="btn_box">
+                            <a href="http://az-solution.co.kr/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail02.jpg" alt="디케이화인케미칼(주) 홈페이지 썸네일 이미지">
+                        <dl>
+                            <dt>디케이화인케미칼(주)</dt>
+                            <dd class="pj_cate">
+                                <span>#RESPONSIVE WEB</span>
+                                <span>#그누보드</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 90%</span>
+                            </dd>
+                        </dl>
+                        <!-- <ul class="pj_explain">
+                            <li></li>
+                        </ul> -->
+                        <div class="btn_box">
+                            <a href="http://atoindus.barunweb.co.kr/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../img/pj_thum/pofol_pj_thumdnail01.jpg" alt="한국투자금융지주 홈페이지 썸네일 이미지">
+                        <dl>
+                            <dt></dt>
+                            <dd class="pj_cate">
+                                <span>#RESPONSIVE WEB</span>
+                                <span>#PHP</span>
+                            </dd>
+                            <dd class="pj_contri">
+                                <em>참여도</em>
+                                <span>퍼블리싱 30%</span>
+                            </dd>
+                        </dl>
+                        <ul class="pj_explain">
+                            <li>메뉴, 메인 슬라이드 외 서브페이지</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="https://www.koreaholdings.com/" target="_blank" class="pj_link">VIEW</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- study -->
+            <section id="study-sec" class="idx_section">
+                <h3 class="section_tit">STUDY</h3>
+                <ul class="st_list">
+                    <li>
+                        <a href="../study/01/index.html" target="_blank">
+                            <em>Title</em>
+                            <span class="st_thum">
+                                <img src="../study/01/img/st-thum.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../study/01/index.html" target="_blank">
+                            <em>Title</em>
+                            <span class="st_thum">
+                                <img src="../study/01/img/st-thum.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../study/01/index.html" target="_blank">
+                            <em>Title</em>
+                            <span class="st_thum">
+                                <img src="../study/01/img/st-thum.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../study/01/index.html" target="_blank">
+                            <em>Title</em>
+                            <span class="st_thum">
+                                <img src="../study/01/img/st-thum.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../study/01/index.html" target="_blank">
+                            <em>Title</em>
+                            <span class="st_thum">
+                                <img src="../study/01/img/st-thum.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- contact -->
+            <section id="contact-sec" class="idx_section">
+                <h3 class="contact_sec_title section_tit">MY <span>CONTACT</span></h3>
+                <ul class="ctac_privacy">
+                    <li class="ctac_prvc_name">KIM DEOK HYEON</li>
+                    <li class="ctac_prvc_mail"><a href="mailto:rlaejrejr131@naver.com">rlaejrejr131@naver.com</a></li>
+                    <li class="ctac_prvc_kkotalk">
+                        <span>KAKAO</span>
+                        <button type="button" class="qr_btn pop_btn">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="13 13 14 14" enable-background="new 0 0 40 40" xml:space="preserve" stroke="#000" stroke-width="0.0004">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M26,20.5H14c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h12c0.3,0,0.5,0.2,0.5,0.5S26.3,20.5,26,20.5z" />
+                                        </g>
+                                        <g>
+                                            <path d="M20,26.5c-0.3,0-0.5-0.2-0.5-0.5V14c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5v12C20.5,26.3,20.3,26.5,20,26.5z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="kko_popup">
+                            <div class="kko_popbox">
+                                <img src="../img/kko_qr.png" alt="카카오톡 오픈채팅 QR코드">
+                                <a class="link_button" href="https://open.kakao.com/o/s8Bxel9f" target="_blank">LINK</a>
+                            </div>
+                            <button type="button" class="close_btn">
+                                close
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                    y="0px" viewBox="13 13 14 14" enable-background="new 0 0 40 40" xml:space="preserve"  stroke="#000" stroke-width="0.0004">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path fill="#231815" d="M25,25.5c-0.1,0-0.3,0-0.4-0.1l-10-10c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0l10,10c0.2,0.2,0.2,0.5,0,0.7
+                                				C25.3,25.5,25.1,25.5,25,25.5z" />
+                                            </g>
+                                            <g>
+                                                <path fill="#231815" d="M15,25.5c-0.1,0-0.3,0-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7l10-10c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-10,10
+                                				C15.3,25.5,15.1,25.5,15,25.5z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
