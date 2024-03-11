@@ -128,8 +128,8 @@ main{position:relative;}
 .profile_box{}
 .profile_box .inner_wrap{max-width:1240px;display:flex;flex-wrap:wrap;justify-content:center;gap:30px 45px;align-items:center;margin:0 auto}
 .profile_box h3{width:100%}
-.profile_me{width:390px;padding:15px 15px 20px;border-radius:30px;background-color:#ececec;}
-.profile_me .poto_box{max-width:360px;border-radius:5px;overflow:hidden;}
+.profile_me{padding:15px 15px 20px;border-radius:30px;background-color:#ececec;}
+.profile_me .poto_box{max-width:360px;border-radius:15px;overflow:hidden;}
 .profile_me .poto_box img{width:100%}
 .profile_me .hashtags{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;}
 .profile_me .hashtags li{padding:5px 8px;background-color:#ccc;border-radius:5px;}
@@ -250,13 +250,59 @@ main{position:relative;}
 
     /* study */
     .st_list li{width:calc(50% - 12px)}
+    .st_list a{padding:16vw 2.8vw 5vw}
     .st_list a::before{font-size:18.4vw}
 }
 
-@media screen and (max-width:1429px) {}
-@media screen and (max-width:1429px) {}
-@media screen and (max-width:1429px) {}
+@media screen and (max-width:767px) {
+    .mobile_menu_btn{width:40px;height:40px;}
+    .mobile_menu_btn .menu_bar{width:30px;height:4px;border-radius:2px;left:5px;top:calc(50% - 2px)}
+    .mobile_menu_btn::before, .mobile_menu_btn::after{width:30px;height:4px;border-radius:2px;position:absolute}
+    .mobile_menu_btn::before{top:8px;left:5px;}
+    .mobile_menu_btn::after{bottom:8px;right:5px;}
+    /* common */
+    .section_tit{font-size:8.2vw;margin-bottom:8vw;}
 
+    /* about */
+    .profile_me{padding:4.2vw}
+    .profile_me .hashtags{margin-top:3vw;}
+    .profile_me .hashtags li{font-size:2.9vw;}
+    .intro_box{font-size:3.5vw;}
+    .profile_info{font-size: 3.5vw;}
+    .skills{margin-top:13vw;gap:3vw}
+    .skills dt{font-size:4.5vw}
+    .skills dd{width:13vw;height:13vw;border-radius:1.7vw;}
+    .skills dd::before{height:13vw;background-size:8.5vw;}
+
+    .history_box .timeline{gap:6vw;padding:10vw 0}
+    .history_box .timeline li em{font-size:3.5vw;margin-bottom:1.2vw}
+    .history_box .timeline li span{font-size:2.9vw}
+
+    /* project */
+    .pj_list{gap:14vw 2%}
+    .pj_list > li{width:100%}
+    .pj_list > li dl{margin:8vw 0 8vw}
+    .pj_list > li dt{font-size:4.5vw;margin-bottom:2vw}
+    .pj_cate{font-size:2.9vw;margin-bottom:3vw}
+    .pj_contri{font-size:3.5vw;}
+    .pj_explain{font-size:3.5vw}
+    .pj_link{font-size:3.1vw;padding:1.7vw 7vw}
+
+    /* study */
+    .st_list{gap:15vw 0}
+    .st_list li{width:100%;box-shadow:0.3vw 0.4vw 2.9vw rgba(0, 0, 0, 0.09);}
+    .st_list a{padding:16vw 4.8vw 5vw}
+    .st_list a::before{left:-2.6vw;top:-4vw;font-size:22vw}
+    .st_list a em{font-size:7.6vw;padding:0 0 8vw 0}
+    
+    /* contact */
+    .ctac_privacy{gap:8vw 0;padding:9vw 5%;margin-top:10vw;}
+    .ctac_privacy li{font-size:6.5vw}
+    .ctac_prvc_mail{align-self:auto;}
+    .ctac_prvc_kkotalk{align-self:auto;gap:4.5vw}
+    .ctac_prvc_kkotalk > button{padding:2vw;border-width:0.46vw}
+    .ctac_prvc_kkotalk svg{width:4.5vw;height:4.5vw}
+}
 
 
 
