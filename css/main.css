@@ -184,7 +184,7 @@ main{position:relative;}
 .st_list li{width:calc(25% - 18px);box-shadow:3px 3px 23px rgba(0, 0, 0, 0.09);overflow:hidden;}
 .st_list a{display:flex;flex-direction:column;padding:132px 13px 50px;position:relative;}
 .st_list a::before{counter-increment:zero-number;content:counter(zero-number, decimal-leading-zero);position:absolute;left:-30px;top:-30px;z-index:-1;font-size:9.4vw;font-weight:700;font-family:var(--en-title-font);opacity:0.1;color:var(--black-color-lighten);letter-spacing:-5px;}
-.st_list a em{font-size:34px;font-weight:500;padding:0 0 60px 13px;}
+.st_list a em{font-size:23px;font-weight:500;padding:0 0 40px 13px;}
 .st_list .st_thum{position:relative;padding:47.754% 50%}
 .st_list .st_thum img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
 
@@ -294,7 +294,7 @@ main{position:relative;}
     .st_list li{width:100%;box-shadow:0.3vw 0.4vw 2.9vw rgba(0, 0, 0, 0.09);}
     .st_list a{padding:16vw 4.8vw 5vw}
     .st_list a::before{left:-2.6vw;top:-4vw;font-size:22vw}
-    .st_list a em{font-size:7.6vw;padding:0 0 8vw 0}
+    .st_list a em{font-size:4.6vw;padding:0 0 8vw 0}
     
     /* contact */
     .ctac_privacy{gap:8vw 0;padding:9vw 5%;margin-top:10vw;}

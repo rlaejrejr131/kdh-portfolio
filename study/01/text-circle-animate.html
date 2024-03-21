@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style>
+        body{display:flex;justify-content:center;align-items:center;width:100vw;height:100vh;margin:0}
+        svg text{font-size:.79em;}
+        .svg1{animation: retate 20s linear infinite;max-width:800px;}
+        .svg2{animation: retate2 20s linear infinite;max-width:500px;}
+        @keyframes retate{
+            to{
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes retate2{
+            to{
+                transform:rotate(-360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <svg viewbox="-50 -50 300 300" class="svg1">
+        <path id="circle-txt" d="M 0 100 a 100,100 0 1,1 0,1" fill="none"></path>
+        <!-- <circle cx="100" cy="100" r="105" stroke="#ccc" stroke-width="30" fill="none"></circle> -->
+        <text>
+            <textPath href="#circle-txt">Quisque dignissim leo tristique, aliquet justo at, vehicula libero. Aenean dapibus metus lacus, eget pretium.</textPath>
+        </text>
+    </svg>
+    <!-- <svg viewbox="-50 -50 300 300" class="svg2">
+        <path id="circle-txt2" d="M 0 100 a 100,100 0 1,1 0,1" fill="none"></path>
+        <text>
+            <textPath href="#circle-txt2">Quisque dignissim leo tristique, aliquet justo at, vehicula libero. Aenean dapibus metus lacus, eget pretium.</textPath>
+        </text>
+    </svg> -->
+</body>
+</html>
