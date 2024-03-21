@@ -66,7 +66,6 @@ a{text-decoration: none;color:var(--black-color)}
 
 .header{padding:36px 20px}
 .header_inner{display:flex;justify-content:space-between;}
-.header_logo a{display:block;font-size:40px;}
 .header_nav{position:fixed;top:33px;left:50%;z-index:var(--z-fixed);transform:translateX(-50%);box-shadow:3px 3px 7px #ccc;border-radius:24px;overflow:hidden;padding:0 15px}
 .header_nav ul{display:flex;justify-content:center;}
 .header_nav ul > li > a{display:block;padding:15px 25px;font-size:16px;font-weight:600;text-transform: capitalize;}
