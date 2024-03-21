@@ -64,7 +64,7 @@ a{text-decoration: none;color:var(--black-color)}
 #skip-nav a{position:absolute;top:-30px;left:0;width:150px;height:30px;line-height:30px;text-align:center;opacity:0;}
 #skip-nav a:focus,#skip-nav a:active{top:0;z-index:3000;opacity:1;}
 
-.header{padding:36px 20px}
+.header{display:flex;justify-content:end;padding:36px 20px}
 .header_inner{display:flex;justify-content:space-between;}
 .header_nav{position:fixed;top:33px;left:50%;z-index:var(--z-fixed);transform:translateX(-50%);box-shadow:3px 3px 7px #ccc;border-radius:24px;overflow:hidden;padding:0 15px}
 .header_nav ul{display:flex;justify-content:center;}
@@ -93,7 +93,7 @@ main{position:relative;}
 #visual-main .visual_bg_txt{display: block;font-size:160px;font-weight:900;color:#e8e8e8;font-family:var(--en-title-font);letter-spacing:-5px;}
 #visual-main .visual_my_name{display: block;font-size:30px;font-family: 'Bacana';position:absolute;top:50%;width:100%}
 #visual-main .line_box{position:relative;width:400px;height:400px;}
-#visual-main .line_box div{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:42% 58% 70% 30% / 45% 45% 55% 55%;animation:morph 5s linear infinite;will-change:border-radius;background:url(../img/yj.jpg) center;background-size:cover;}
+#visual-main .line_box div{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:42% 58% 70% 30% / 45% 45% 55% 55%;animation:morph 5s linear infinite;will-change:border-radius;background:url(../img/profile.jpg) center;background-size:cover;}
 #visual-main .line_box span{position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid var(--black-color-lighten);animation:spin 10s linear infinite;}
 #visual-main .line_box span:nth-of-type(1){border-radius:74% 26% 75% 25% / 31% 67% 33% 69%;}
 #visual-main .line_box span:nth-of-type(2){animation-duration: 5.5s;animation-direction:reverse;border-radius:44% 56% 34% 66% / 63% 73% 27% 37%;}
