@@ -127,7 +127,7 @@ main{position:relative;}
 .profile_box{}
 .profile_box .inner_wrap{max-width:1240px;display:flex;flex-wrap:wrap;justify-content:center;gap:30px 45px;align-items:center;margin:0 auto}
 .profile_box h3{width:100%}
-.profile_me{padding:15px 15px 20px;border-radius:30px;background-color:#ececec;}
+.profile_me{max-width:390px;padding:15px 15px 20px;border-radius:30px;background-color:#ececec;}
 .profile_me .poto_box{max-width:360px;border-radius:15px;overflow:hidden;}
 .profile_me .poto_box img{width:100%}
 .profile_me .hashtags{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;}
