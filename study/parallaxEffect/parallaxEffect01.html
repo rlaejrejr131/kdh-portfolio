@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax Effect</title>
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{padding:0;margin:0;box-sizing: border-box;}
+        .parallax{background-color:#222;color:#ffff;font-family:"NexonLv1Gothic";font-weight:400;}
+        #paraHeader{padding:20px;}
+        #paraHeader h1{display:inline-block;font-size:20px;border-bottom:1px dashed #fff;margin-bottom:8px;}
+        #paraCont{max-width:1600px;margin:0 auto;width:100%;overflow:hidden;}
+        #paraFooter{padding:0 10vw}
+        #paraFooter h2{font-size:8vw;line-height:1.2;padding:10vw 8vw 0;text-transform:uppercase;margin-bottom:3vw;}
+        #paraFooter em{display:block;font-family:"Lato";font-weight:100;padding-left:18vw;}
+        #paraFooter .footerInfo{display:flex;justify-content:center;align-items:center;gap:20px;padding:15px 20px;text-align:center;margin-bottom:2px;;}
+        #paraFooter .footerInfo li{display:inline;list-style:none;}
+        #paraFooter .footerInfo li a{display:inline-block;width:30px;height:30px;text-decoration:none;color:#fff;border:2px dotted rgba(255,255,255,0.5);border-radius:50%;line-height:30px;transition:all 0.3s;}
+        #paraFooter .footerInfo li:is(.active, :hover) a{background-color:#fff;color:#222;}
+
+        .content_item{max-width:70vw;width:1000px;;margin:30vw 0;text-align:right;position:relative;padding-top:10vw;}
+        .content_item:nth-child(even){margin-left:auto;text-align:left;}
+        .content_item_num{font-size:25vw;font-family:"Lato";opacity:0.07;position:absolute;right:-5vw;top:-10vw;}
+        .content_item:nth-child(even) .content_item_num{right:auto;left:-5vw;}
+        .content_item_tit{margin-bottom:1vw;font-size:2vw;}
+        .content_item_imgWrap{width:100%;padding-bottom:56%;position:relative}
+        .content_item_img{width:100%;height:100%;position:absolute;left:0;top:0;background-position:center;background-repeat:no-repeat;background-size:cover;filter: saturate(0%);transition:all 1s;}
+        .content_item_img:hover{filter:saturate(100%);}
+        .content_item_desc{font-size:4vw;line-height:1.4;word-wrap:break-word;word-break:keep-all;margin-top:-6vw;margin-right:-3vw;position:relative;z-index:10;}
+        .content_item:nth-child(even) .content_item_desc{margin-right:0;margin-left:-3vw;}
+
+        .content_item:nth-child(1) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg1.jpg);}
+        .content_item:nth-child(2) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg2.jpg);}
+        .content_item:nth-child(3) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg3.jpg);}
+        .content_item:nth-child(4) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg4.jpg);}
+        .content_item:nth-child(5) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg5.jpg);}
+        .content_item:nth-child(6) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg6.jpg);}
+        .content_item:nth-child(7) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg7.jpg);}
+        .content_item:nth-child(8) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg8.jpg);}
+        .content_item:nth-child(9) .content_item_img{background-image:url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg9.jpg);}
+    </style>
+</head>
+<body class="parallax">
+    <header id="paraHeader">
+        <h1>Parallax Effect</h1>
+        <p>패럴랙스 스크롤링 효과</p>
+    </header>
+
+    <main id="paraCont">
+        <!-- section1 -->
+        <section id="section01" class="content_item">
+            <span class="content_item_num">01</span>
+            <h2 class="content_item_tit">section1</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section2 -->
+        <section id="section02" class="content_item">
+            <span class="content_item_num">02</span>
+            <h2 class="content_item_tit">section2</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section3 -->
+        <section id="section03" class="content_item">
+            <span class="content_item_num">03</span>
+            <h2 class="content_item_tit">section3</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section4 -->
+        <section id="section04" class="content_item">
+            <span class="content_item_num">04</span>
+            <h2 class="content_item_tit">section4</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+
+        <!-- section5 -->
+        <section id="section05" class="content_item">
+            <span class="content_item_num">05</span>
+            <h2 class="content_item_tit">section5</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section6 -->
+        <section id="section06" class="content_item">
+            <span class="content_item_num">06</span>
+            <h2 class="content_item_tit">section6</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section7 -->
+        <section id="section07" class="content_item">
+            <span class="content_item_num">07</span>
+            <h2 class="content_item_tit">section7</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section8 -->
+        <section id="section08" class="content_item">
+            <span class="content_item_num">08</span>
+            <h2 class="content_item_tit">section8</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+        
+        <!-- section9 -->
+        <section id="section09" class="content_item">
+            <span class="content_item_num">09</span>
+            <h2 class="content_item_tit">section9</h2>
+            <figure class="content_item_imgWrap">
+                <div class="content_item_img"></div>
+            </figure>
+            <p class="content_item_desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+        </section>
+    </main>
+
+    <footer id="paraFooter">
+        <h2>Parallax <em>scrolling</em></h2>
+        <div class="footerInfo">
+            <h3>Jquery</h3>
+            <ul>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+            </ul>
+        </div>
+        <div class="footerInfo">
+            <h3>Javascript</h3>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
